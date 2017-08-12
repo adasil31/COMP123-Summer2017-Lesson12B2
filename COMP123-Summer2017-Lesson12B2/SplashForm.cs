@@ -12,7 +12,7 @@ using System.Windows.Forms;
  * Student Number: 300927354
  * Date: August 8,2017.
  * Description: Splash Form class
- * Version 0.1- Created the Splash Form
+ * Version 0.2- Created splashformtimer
  */
 
 namespace COMP123_Summer2017_Lesson12B2
@@ -22,6 +22,19 @@ namespace COMP123_Summer2017_Lesson12B2
         public SplashForm()
         {
             InitializeComponent();
+        }
+        /// <summary>
+        /// This is the event handler for the "Tick"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SplashFormTimer_Tick(object sender, EventArgs e)
+        {
+            CalculatorForm calculatorForm = new CalculatorForm();
+            calculatorForm.Show();
+            this.Hide();
+            SplashFormTimer.Enabled = false;// turn time for off
+
         }
     }
 }
