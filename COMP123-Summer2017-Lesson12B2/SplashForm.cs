@@ -12,7 +12,7 @@ using System.Windows.Forms;
  * Student Number: 300927354
  * Date: August 8,2017.
  * Description: Splash Form class
- * Version 0.1- Created the Splash Form 
+ * Version 0.1- Created the Splash Form
  */
 
 namespace COMP123_Summer2017_Lesson12B2
